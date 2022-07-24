@@ -1,0 +1,57 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #e5989b;
+}
+
+h1 {
+    background-color: palevioletred;
+    width: 200px;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+#one {
+    background-color: #e5989b;
+    border-width: 3px;
+    border-color: palevioletred;
+    border-style: groove;
+    box-sizing: border-box;
+    border-radius: 10px 30% 50% 70%;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+#two {
+    background-color: #b5838d;
+    border-width: 3px;
+    border-color: blueviolet;
+    border-style: dashed;
+    box-sizing: border-box;
+    border-left-width: 4px;
+    border-radius: 25%;
+    margin: 50px;
+
+}
+
+button {
+    padding: 0 20px;
+}
+
+#three {
+    background-color: #6d6875;
+    border: 3px solid rebeccapurple;
+    box-sizing: border-box;
+    border-right-width: 4px;
+    border-radius: 50%;
+    margin: 50px;
+}
+
+#four {
+    background-color: burlywood;
+    border: 3px solid goldenrod;
+    box-sizing: border-box;
+    border-right-width: 4px;
+    border-radius: 10%/50%;
+    margin: 50px;
+}

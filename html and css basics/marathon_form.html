@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Marathon Form</title>
+    <link rel="stylesheet" href="styling_form.css">
+</head>
+<body>
+    <h1>Race Rgistration</h1>
+    <form action="kjjkk">
+        <div>
+            <label for="first">First Name</label>
+            <input type="text" name="first_name" id="first" required >
+
+            <label for="last">Last Name</label>
+            <input type="text" name="last_name" id="last" required>
+        </div>
+        <p>Select a Race</p>
+        <div>
+            <input type="radio" name="race" id="funrun" value="funrun">
+            <label for="funrun">Fun Run 5k</label>
+        </div>
+        <div>
+            <input type="radio" name="race" id="halfrun" value="halfrun">
+            <label for="halfrun">Half Marathon</label>
+        </div>
+        <div>
+            <input type="radio" name="race" id="fullrun" value="fullrun">
+            <label for="fullrun">Full Marathon</label>
+        </div>
+
+        <div>
+            <label for="mail">Enter Your Email</label>
+            <input type="email" name="email" id="mail" required>
+
+            <label for="pass">Enter your password</label>
+            <input type="password" name="password" id="pass" required>
+        </div>
+
+        <div>
+            <label for="div">Select Age group</label>
+            <select name="div" id="div">
+                <option value="Kids">10-12</option>
+                <option value="Adults">13-18</option>
+                <option value="Young Adults">18-30</option>
+                <option value="Seniors">30-50</option>
+            </select>    
+        </div>
+        <button>Register</button>
+        <button id="logout">Log Out</button>
+
+        <footer>
+            <a href="#license">Content is avalaible under these licenses</a>
+            <a href="home">Home</a>
+        </footer>
+        </form>
+</body>
+</html>

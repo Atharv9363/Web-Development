@@ -1,0 +1,51 @@
+body {
+    background-color: #f1faee;
+}
+
+h1 {
+    color: #1d3557;
+}
+
+label+input {
+    background-color: rebeccapurple;
+}
+
+#logout {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+#first,
+#last {
+    background-color: aqua;
+    color: aquamarine;
+}
+
+footer>a {
+    color: royalblue;
+}
+
+input[type="password"] {
+    color: coral;
+}
+
+a[href*="home"] {
+    color: crimson;
+}
+
+button:hover {
+    background-color: red;
+    color: #f1faee;
+}
+
+a:hover {
+    text-decoration: solid;
+}
+
+button:active {
+    background-color: #02c39a;
+}
+
+input[type="radio"]:checked {
+    color: red;
+}
