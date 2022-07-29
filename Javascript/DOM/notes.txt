@@ -1,0 +1,442 @@
+****************** Run these on console *****************
+
+document
+-> #document
+
+console.dir(document)
+-> #document
+
+document.all
+-> Gives all objects
+
+ document.all[10]
+-><b>Silkie</b>
+
+========================== getElementById ===============================
+document.getElementById('chicken')
+-> null
+
+document.getElementById('banner')
+-> <img id=​"banner" src=​"https:​/​/​upload.wikimedia.org/​wikipedia/​commons/​thumb/​e/​e2/​Silky_bantam.jpg/​440px-Silky_bantam.jpg" alt>​
+
+const banner = document.getElementById('banner')
+-> undefined
+
+banner
+-> <img id=​"banner" src=​"https:​/​/​upload.wikimedia.org/​wikipedia/​commons/​thumb/​e/​e2/​Silky_bantam.jpg/​440px-Silky_bantam.jpg" alt>​
+
+
+console.dir(banner)
+-> img#banner
+
+document.getElementById('toc')
+-> <div id=​"toc" role=​"navigation" aria-labelledby=​"mw-toc-heading">​…​</div>​
+
+const toc = document.getElementById('toc')
+-> undefined
+
+toc
+-> <div id=​"toc" role=​"navigation" aria-labelledby=​"mw-toc-heading">​…​</div>​
+
+console.dir(toc)
+->div#toc
+
+============================= getElementsByTagName ============================
+document.getElementsByTagName('img');
+HTMLCollection(4) [img#banner, img.square, img.square, img.square, banner: img#banner]
+
+console.dir(allImages[1]);
+VM982:1 img.square
+
+allImages.length
+4
+
+document.getElementsByTagName('p')
+HTMLCollection(2) [p, p]
+
+document.getElementsByTagName('div')
+HTMLCollection(2) [div#toc, div.toctitle, toc: div#to
+
+document.getElementsByTagName('b')
+HTMLCollection(3) [b, b, b]
+
+document.getElementsByTagName('a')
+HTMLCollection(24) [a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a.mw-redirect, a, a, a, a]
+
+================================= getElementsByClassName =========================
+
+document.getElementsByClassName('square')
+HTMLCollection(3) [img.square, img.square, img.square]
+
+================================= querySelector ==============================
+document.querySelector('p');
+<p>​…​</p>​
+
+document.querySelector('#banner'); //for id
+<img id=​"banner" src=​"https:​/​/​upload.wikimedia.org/​wikipedia/​commons/​thumb/​e/​e2/​Silky_bantam.jpg/​440px-Silky_bantam.jpg" alt>​
+
+document.querySelector('.square'); //for class
+<img class=​"square" src=​"https:​/​/​upload.wikimedia.org/​wikipedia/​commons/​thumb/​e/​e2/​Silky_bantam.jpg/​440px-Silky_bantam.jpg" alt>​
+
+document.querySelector('img:nth-of-type(2)');
+<img class=​"square" src=​"https:​/​/​upload.wikimedia.org/​wikipedia/​commons/​thumb/​e/​e2/​Silky_bantam.jpg/​440px-Silky_bantam.jpg" alt>​
+
+document.querySelector('a[title = "Java"]');
+<a href=​"/​wiki/​Java" title=​"Java">​Java​</a>​
+
+================================= querySelectorAll ===============================
+document.querySelectorAll('p');
+NodeList(2) [p, p]
+
+document.querySelectorAll('img');
+NodeList(4) [img#banner, img.square, img.square, img.square]
+
+document.querySelectorAll('a');
+NodeList(24) [a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a.mw-redirect, a, a, a, a]0: a1: a2: a3: a4: a5: a6: a7: a8: a9: a10: a11: a12: a13: a14: a15: a16: a17: a18: a19: a.mw-redirect20: a21: a22: a23: alength: 24[[Prototype]]: NodeList
+
+document.querySelectorAll('a');
+NodeList(24) [a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a.mw-redirect, a, a, a, a]0: a1: a2: a3: a4: a5: a6: a7: a8: a9: a10: a11: a12: a13: a14: a15: a16: a17: a18: a19: a.mw-redirect20: a21: a22: a23: alength: 24[[Prototype]]: NodeList
+
+document.querySelector('h1');
+<h1>​Silkie Chickens​</h1>​
+
+const h1 = document.querySelector('h1');
+undefined
+
+console.dir(h1)
+VM220:1 h1
+
+h1
+<h1>​Silkie Chickens​</h1>​
+
+document.querySelector('p').innerText;
+'The Silkie (sometimes spelled Silky) is a breed of chicken named for its atypically fluffy plumage, which is said to feel like silk and satin. The breed has several other unusual qualities, such as black skin and bones, blue earlobes, and five toes on each foot, whereas most chickens only have four. They are often exhibited in poultry shows, and appear in various colors. In addition to their distinctive physical characteristics, Silkies are well known for their calm, friendly temperament. It is among the most docile of poultry. Hens are also exceptionally broody, and care for young well. Though they are fair layers themselves, laying only about three eggs a week, they are commonly used to hatch eggs from other breeds and bird species due to their broody nature. Silkie chickens are very easy to keep as pets. They are suitable for children, but like any pet, should be handled with care.'
+
+document.querySelector('p').innerText = 'Atharv';
+'Atharv'
+
+document.querySelector('p').textContent;
+'The Silkie (sometimes spelled Silky) is a breed of chicken named for\n        its atypically fluffy plumage, which is said to feel like silk and satin. The breed has several other unusual qualities, such as\n        black skin and bones, blue earlobes, and five toes on each foot, whereas most chickens only have four. They are\n        often exhibited in poultry shows, and appear in various colors. In\n        addition to their distinctive physical characteristics, Silkies are well known for their calm, friendly\n        temperament. It is among the most docile of poultry. Hens are also exceptionally broody, and care for young well. Though they are fair layers themselves, laying only\n        about three eggs a week, they are commonly used to hatch eggs from other breeds and bird species due to their\n        broody nature. Silkie chickens are very easy to keep as pets. They are suitable for children, but like any pet,\n        should be handled with care.\n 
+
+document.querySelector('p').innerHTML;
+'The <b>Silkie</b> (sometimes spelled <b>Silky</b>) is a <a href="/wiki/List_of_chicken_breeds" title="List of chicken breeds" style="color: rgb(0, 108, 134); text-decoration-color: magenta; text-decoration-style: wavy;">breed</a> of <a href="/wiki/Chicken" title="Chicken" style="color: rgb(0, 108, 134); text-decoration-color: magenta; text-decoration-style: wavy;">chicken</a> named for\n        its atypically fluffy <a href="/wiki/Plumage" title="Plumage" style="color: rgb(0, 108, 134); text-decoration-color: magenta; text-decoration-style: wavy;">plumage</a>, which is said to feel like <a href="/wiki/Silk" title="Silk" style="color: rgb(0, 108, 134); text-decoration-color: magenta; text-decoration-style: wavy;">silk</a> and satin. The breed has several other unusual qualities, such as\n        black skin and bones, blue earlobes, and five toes on each foot, whereas most chickens only have four. They are\n        often exhibited in <a href="/wiki/Poultry" title="Poultry" style="color: rgb(0, 108, 134); text-decoration-color: magenta; text-decoration-style: wavy;">poultry</a> shows, and appear in various colors. In\n        addition to their distinctive physical characteristics, Silkies are well known for their calm, friendly\n        temperament. It is among the most docile of poultry. Hens are also exceptionally <a href="/wiki/Broodiness" title="Broodiness" style="color: rgb(0, 108, 134); text-decoration-color: magenta; text-decoration-style: wavy;">broody</a>, and care for young well. Though they are fair layers themselves, laying only\n        about three eggs a week, they are commonly used to hatch eggs from other breeds and bird species due to their\n        broody nature. Silkie chickens are very easy to keep as pets. They are suitable for children, but like any pet,\n        should be handled with care.\n    '
+
+document.querySelector('h1').innerText = '<i>Atharv</i>';
+'<i>Atharv</i>' //It will not print in italic 
+
+document.querySelector('h1').innerHTML = '<i>Atharv</i>';
+'<i>Atharv</i>' //It will print in italic
+
+document.querySelector('h1').innerHTML += '<i>Atharv</i> <sup>@R</sup>';
+'<i>Atharv</i> += <sup>@R</sup><i>Atharv</i> <sup>@R</sup>'
+
+document.querySelector('p').innerHTML = '<b>Atharv</b>';
+'<b>Atharv</b>'
+
+document.querySelector('input');
+<input type=​"checkbox" role=​"button" id=​"toctogglecheckbox" class=​"toctogglecheckbox" style=​"display:​none">​
+
+document.querySelectorAll('input')[1];
+<input type=​"text">​
+
+document.querySelectorAll('input[type = "text"]')[1];
+undefined
+
+document.querySelector('input[type = "text"]');
+<input type=​"text">​
+
+const input = document.querySelector('input[type = "text"]');
+undefined
+
+input.type
+'text'
+
+input.type = "color"
+'color'
+
+input.setAttribute('type','text')
+undefined
+
+
+
+========================= Changing Styles ============================
+const h1 = document.querySelector('h1');
+undefined
+
+h1
+<h1>​Silkie Chickens​</h1>​
+
+h1.style
+CSSStyleDeclaration {accentColor: '', additiveSymbols: '', alignContent: '', alignItems: '', alignSelf: '', …}
+h1.style.color = 'Red'
+'Red'
+
+h1.style.fontSize = '3em'
+'3em'
+
+h1.style.border = '2px solid pink'
+'2px solid pink'
+
+window.getComputedStyle(h1)
+CSSStyleDeclaration {0: 'accent-color', 1: 'align-content', 2: 'align-items', 3: 'align-self', 4: 'alignment-baseline', 5: 'animation-delay', 6: 'animation-direction', 7: 'animation-duration', 8: 'animation-fill-mode', 9: 'animation-iteration-count', 10: 'animation-name', 11: 'animation-play-state', 12: 'animation-timing-function', 13: 'app-region', 14: 'appearance', 15: 'backdrop-filter', 16: 'backface-visibility', 17: 'background-attachment', 18: 'background-blend-mode', 19: 'background-clip', 20: 'background-color', 21: 'background-image', 22: 'background-origin', 23: 'background-position', 24: 'background-repeat', 25: 'background-size', 26: 'baseline-shift', 27: 'block-size', 28: 'border-block-end-color', 29: 'border-block-end-style', 30: 'border-block-end-width', 31: 'border-block-start-color', 32: 'border-block-start-style', 33: 'border-block-start-width', 34: 'border-bottom-color', 35: 'border-bottom-left-radius', 36: 'border-bottom-right-radius', 37: 'border-bottom-style', 38: 'border-bottom-width', 39: 'border-collapse', 40: 'border-end-end-radius', 41: 'border-end-start-radius', 42: 'border-image-outset', 43: 'border-image-repeat', 44: 'border-image-slice', 45: 'border-image-source', 46: 'border-image-width', 47: 'border-inline-end-color', 48: 'border-inline-end-style', 49: 'border-inline-end-width', 50: 'border-inline-start-color', 51: 'border-inline-start-style', 52: 'border-inline-start-width', 53: 'border-left-color', 54: 'border-left-style', 55: 'border-left-width', 56: 'border-right-color', 57: 'border-right-style', 58: 'border-right-width', 59: 'border-start-end-radius', 60: 'border-start-start-radius', 61: 'border-top-color', 62: 'border-top-left-radius', 63: 'border-top-right-radius', 64: 'border-top-style', 65: 'border-top-width', 66: 'bottom', 67: 'box-shadow', 68: 'box-sizing', 69: 'break-after', 70: 'break-before', 71: 'break-inside', 72: 'buffered-rendering', 73: 'caption-side', 74: 'caret-color', 75: 'clear', 76: 'clip', 77: 'clip-path', 78: 'clip-rule', 79: 'color', 80: 'color-interpolation', 81: 'color-interpolation-filters', 82: 'color-rendering', 83: 'column-count', 84: 'column-gap', 85: 'column-rule-color', 86: 'column-rule-style', 87: 'column-rule-width', 88: 'column-span', 89: 'column-width', 90: 'contain-intrinsic-block-size', 91: 'contain-intrinsic-height', 92: 'contain-intrinsic-inline-size', 93: 'contain-intrinsic-size', 94: 'contain-intrinsic-width', 95: 'content', 96: 'cursor', 97: 'cx', 98: 'cy', 99: 'd', …}
+
+window.getComputedStyle(h1).color
+'rgb(255, 0, 0)'
+
+window.getComputedStyle(h1).fontSize
+'48px'
+
+window.getComputedStyle(h1).fontFamily
+'"Times New Roman"'
+
+window.getComputedStyle(h1).margin
+'32.16px 0px'
+
+========================= classList ============================
+const h2 = document.querySelector('h2');
+undefined
+
+h2.getAttribute('class')
+null
+
+h2.setAttribute('class', 'purple')
+undefined
+
+h2.setAttribute('class', 'border')
+undefined
+
+let currentClasses = h2.getAttribute('class');
+undefined
+
+currentClasses
+'border'
+
+h2.setAttribute('class', `${currentClasses} purple`)
+undefined
+
+========================= Traversing parent/child/sibling =======================
+
+const firstBold = document.querySelector('b');
+undefined
+
+firstBold
+<b>​Silkie​</b>​
+
+firstBold.parentElement
+<p>​…​</p>​
+
+firstBold.parentElement.parentElement
+<body>​…​</body>​
+
+firstBold.parentElement.parentElement.parentElement
+<html lang=​"en">​<head>​…​</head>​<body>​…​</body>​</html>​
+
+const paragraph = firstBold.parentElement
+undefined
+
+paragraph.parentElement
+<body>​…​</body>​
+
+paragraph.children
+HTMLCollection(8) [b, b, a, a, a, a, a, a]
+
+paragraph.children[0]
+<b>​Silkie​</b>​
+
+document.querySelector('.square')
+<img class=​"square" src=​"https:​/​/​upload.wikimedia.org/​wikipedia/​commons/​thumb/​e/​e2/​Silky_bantam.jpg/​440px-Silky_bantam.jpg" alt>​
+
+const squareImg = document.querySelector('.square')
+undefined
+
+squareImg.parentElement
+<body>​…​</body>​
+
+squareImg.children
+HTMLCollection []
+
+squareImg.nextSibling
+#text
+
+squareImg.previousSibling
+#text
+
+squareImg.nextElementSibling
+<img class=​"square" src=​"https:​/​/​upload.wikimedia.org/​wikipedia/​en/​thumb/​e/​e0/​Male_Silkie.png/​460px-Male_Silkie.png" alt>​
+
+squareImg.previousElementSibling
+<p>​…​</p>​
+
+=========================== Append and AppendChild =========================
+
+document.createElement('img')
+<img>​
+const newImg = document.createElement('img')
+undefined
+
+VM4551:1 newImg
+undefined
+
+console.dir(newImg)
+VM4568:1 imgaccessKey: ""align: ""alt: ""ariaAtomic: nullariaAutoComplete: nullariaBusy: nullariaChecked: nullariaColCount: nullariaColIndex: nullariaColSpan: nullariaCurrent: nullariaDescription: nullariaDisabled: nullariaExpanded: nullariaHasPopup: nullariaHidden: nullariaInvalid: nullariaKeyShortcuts: nullariaLabel: nullariaLevel: nullariaLive: nullariaModal: nullariaMultiLine: nullariaMultiSelectable: nullariaOrientation: nullariaPlaceholder: nullariaPosInSet: nullariaPressed: nullariaReadOnly: nullariaRelevant: nullariaRequired: nullariaRoleDescription: nullariaRowCount: nullariaRowIndex: nullariaRowSpan: nullariaSelected: nullariaSetSize: nullariaSort: nullariaValueMax: nullariaValueMin: nullariaValueNow: nullariaValueText: nullassignedSlot: nullattributeStyleMap: StylePropertyMap {size: 0}attributes: NamedNodeMap {length: 0}autocapitalize: ""autofocus: falsebaseURI: "file:///C:/Users/Atharv/Desktop/Web%20dev/Javascript/DOM/DOM_Intro_CODE/Manipulating/index.html"border: ""childElementCount: 0childNodes: NodeList []children: HTMLCollection []classList: DOMTokenList [value: '']className: ""clientHeight: 0clientLeft: 0clientTop: 0clientWidth: 0complete: truecontentEditable: "inherit"crossOrigin: nullcurrentSrc: ""dataset: DOMStringMap {}decoding: "auto"dir: ""draggable: trueelementTiming: ""enterKeyHint: ""fetchPriority: "auto"firstChild: nullfirstElementChild: nullheight: 0hidden: falsehspace: 0id: ""inert: falseinnerHTML: ""innerText: ""inputMode: ""isConnected: falseisContentEditable: falseisMap: falselang: ""lastChild: nulllastElementChild: nullloading: "auto"localName: "img"longDesc: ""lowsrc: ""name: ""namespaceURI: "http://www.w3.org/1999/xhtml"naturalHeight: 0naturalWidth: 0nextElementSibling: nullnextSibling: nullnodeName: "IMG"nodeType: 1nodeValue: nullnonce: ""offsetHeight: 0offsetLeft: 0offsetParent: nulloffsetTop: 0offsetWidth: 0onabort: nullonanimationend: nullonanimationiteration: nullonanimationstart: nullonauxclick: nullonbeforecopy: nullonbeforecut: nullonbeforematch: nullonbeforepaste: nullonbeforexrselect: nullonblur: nulloncancel: nulloncanplay: nulloncanplaythrough: nullonchange: nullonclick: nullonclose: nulloncontextlost: nulloncontextmenu: nulloncontextrestored: nulloncopy: nulloncuechange: nulloncut: nullondblclick: nullondrag: nullondragend: nullondragenter: nullondragleave: nullondragover: nullondragstart: nullondrop: nullondurationchange: nullonemptied: nullonended: nullonerror: nullonfocus: nullonformdata: nullonfullscreenchange: nullonfullscreenerror: nullongotpointercapture: nulloninput: nulloninvalid: nullonkeydown: nullonkeypress: nullonkeyup: nullonload: nullonloadeddata: nullonloadedmetadata: nullonloadstart: nullonlostpointercapture: nullonmousedown: nullonmouseenter: nullonmouseleave: nullonmousemove: nullonmouseout: nullonmouseover: nullonmouseup: nullonmousewheel: nullonpaste: nullonpause: nullonplay: nullonplaying: nullonpointercancel: nullonpointerdown: nullonpointerenter: nullonpointerleave: nullonpointermove: nullonpointerout: nullonpointerover: nullonpointerrawupdate: nullonpointerup: nullonprogress: nullonratechange: nullonreset: nullonresize: nullonscroll: nullonsearch: nullonsecuritypolicyviolation: nullonseeked: nullonseeking: nullonselect: nullonselectionchange: nullonselectstart: nullonslotchange: nullonstalled: nullonsubmit: nullonsuspend: nullontimeupdate: nullontoggle: nullontransitioncancel: nullontransitionend: nullontransitionrun: nullontransitionstart: nullonvolumechange: nullonwaiting: nullonwebkitanimationend: nullonwebkitanimationiteration: nullonwebkitanimationstart: nullonwebkitfullscreenchange: nullonwebkitfullscreenerror: nullonwebkittransitionend: nullonwheel: nullouterHTML: "<img>"outerText: ""ownerDocument: documentparentElement: nullparentNode: nullpart: DOMTokenList [value: '']prefix: nullpreviousElementSibling: nullpreviousSibling: nullreferrerPolicy: ""role: nullscrollHeight: 0scrollLeft: 0scrollTop: 0scrollWidth: 0shadowRoot: nullsizes: ""slot: ""spellcheck: truesrc: ""srcset: ""style: CSSStyleDeclaration {accentColor: '', additiveSymbols: '', alignContent: '', alignItems: '', alignSelf: '', …}tabIndex: -1tagName: "IMG"textContent: ""title: ""translate: trueuseMap: ""virtualKeyboardPolicy: ""vspace: 0width: 0x: 0y: 0[[Prototype]]: HTMLImageElement
+undefined
+
+newImg.src = 
+
+<img src=​"data:​image/​jpeg;​base64,/​9j…GP7amvURvBXgaZwPAtTXqwPB/​/​Z">​
+
+newImg.classList.add('square');
+undefined
+
+const newH3 = document.createElement('h3');
+undefined
+
+newH3
+<h3>​</h3>​
+
+newH3.innerText = "I'm new!!"
+"I'm new!!"
+
+document.body.appendChild(newH3)
+<h3>​I'm new!!​</h3>​
+
+const p = document.querySelector('p')
+undefined
+
+p.append("I'm new text!!")
+undefined
+
+p.append("I'm new text!!","I'm also new")
+undefined
+
+p.append("I'm new text!!")
+undefined
+
+const newB = document.createElement('b')
+undefined
+
+newB.append('Hi!')
+undefined
+
+newB
+<b>​Hi!​</b>​
+
+p.prepend(newB)
+undefined
+
+const h2 = document.createElement('h2');
+undefined
+
+h2.append("are adorable chickens")
+undefined
+
+const h1 = document.querySelector('h1');
+undefined
+
+h1.insertAdjacentElement('afterend', h2)
+<h2>​are adorable chickens​</h2>​
+
+const h3 = document.createElement('h3');
+undefined
+
+h3.innerText="I'm h3"
+"I'm h3"
+
+h1.after(h3)
+undefined
+
+======================= removeChild and remove ==========================
+const firstLI = document.querySelector('li')
+undefined
+
+firstLI
+<li class=​"toclevel-1 tocsection-1">​…​</li>​
+ul
+
+const ul = firstLI.parentElement 
+undefined
+
+ul
+<ul>​…​</ul>​
+
+ul.removeChild(firstLI)
+<li class=​"toclevel-1 tocsection-1">​…​</li>​
+
+const b = document.querySelector('b')
+undefined
+
+b.parentElement.removeChild(b)
+<b>​Silkie​</b>​
+
+const img = document.querySelector('img')
+undefined
+
+img.remove
+ƒ remove() { [native code] }
+
+img.remove()
+undefined
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
