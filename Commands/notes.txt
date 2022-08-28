@@ -1,0 +1,221 @@
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev (master)
+$ ls
+ Javascript/   Projects/  'html and css basics'/
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev (master)
+$ cd Projects
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Projects (master)
+$ ls
+'Photo Blog'/   PricingPanel_CODE/   ScoreKeeper/   'Todo list project'/
+ Pokemon/       RandomColors/        TVShowSearch/
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Projects (master)
+$ cd Pokemon
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Projects/Pokemon (master)
+$ cd..
+bash: cd..: command not found
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Projects/Pokemon (master)
+$ cd ..
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Projects (master)
+$ cd ..
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev (master)
+$ ls
+ Javascript/   Projects/  'html and css basics'/
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev (master)
+$ cd Projects
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Projects (master)
+$ ls
+'Photo Blog'/   PricingPanel_CODE/   ScoreKeeper/   'Todo list project'/
+ Pokemon/       RandomColors/        TVShowSearch/
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Projects (master)
+$ cd RandomColors
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Projects/RandomColors (master)
+$ cd /Desktop/Web dev
+bash: cd: too many arguments
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Projects/RandomColors (master)
+$ cd /Desktop/'Web dev'
+bash: cd: /Desktop/Web dev: No such file or directory
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Projects/RandomColors (master)
+$ cd /Desktop/Webdev
+bash: cd: /Desktop/Webdev: No such file or directory
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Projects/RandomColors (master)
+$ cd /Desktop/'Web dev'
+bash: cd: /Desktop/Web dev: No such file or directory
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Projects/RandomColors (master)
+$ cd /Desktop
+bash: cd: /Desktop: No such file or directory
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Projects/RandomColors (master)
+$ cd /'Web dev'/Projects
+bash: cd: /Web dev/Projects: No such file or directory
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Projects/RandomColors (master)
+$ cd ~
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~
+$ cd Desktop
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop
+$ ls
+'CrystalDiskMark 8.lnk'*  'Microsoft VS Code'/       'Web dev'/
+'DSA in c++'/             'MinGW Installer.lnk'*      bits/
+ Documents/               'Pandora TV.lnk'*           desktop.ini
+ KMPlayer.lnk*             Resso.lnk*                 git/
+'Microsoft Edge.lnk'*     'Visual Studio Code.lnk'*
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop
+$ cd 'Web dev'
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev (master)
+$ ls
+ Javascript/   Projects/  'html and css basics'/
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev (master)
+$ mkdir Commands
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev (master)
+$ ls
+ Commands/   Javascript/   Projects/  'html and css basics'/
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev (master)
+$ cd Commands
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Commands (master)
+$ ls
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Commands (master)
+$ mkdir 'terminal Commands'
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Commands (master)
+$ ls
+'terminal Commands'/
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Commands (master)
+$ man ls
+bash: man: command not found
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Commands (master)
+$ cd ~
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~
+$ man ls
+bash: man: command not found
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~
+$ cd Desktop
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop
+$ cd 'Web dev'
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev (master)
+$ ls -l
+total 20
+drwxr-xr-x 1 Atharv 197121 0 Aug  7 10:43  Commands/
+drwxr-xr-x 1 Atharv 197121 0 Aug  5 19:58  Javascript/
+drwxr-xr-x 1 Atharv 197121 0 Aug  5 19:59  Projects/
+drwxr-xr-x 1 Atharv 197121 0 Jul 20 19:23 'html and css basics'/
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev (master)
+$ cd Commands
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Commands (master)
+$ touch notes.txt
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Commands (master)
+$ ls
+ notes.txt  'terminal Commands'/
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Commands (master)
+$ touch app.css index.html app.js
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Commands (master)
+$ ls
+ app.css   app.js   index.html   notes.txt  'terminal Commands'/
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Commands (master)
+$ rm app.css
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Commands (master)
+$ ls
+ app.js   index.html   notes.txt  'terminal Commands'/
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev/Commands (master)
+$ cd ..
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev (master)
+$ ls
+ Commands/   Javascript/   Projects/  'html and css basics'/
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev (master)
+$ mkdir temp
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev (master)
+$ rm temp
+rm: cannot remove 'temp': Is a directory
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev (master)
+$ mkdir temp
+mkdir: cannot create directory ‘temp’: File exists
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev (master)
+$ ls
+ Commands/   Javascript/   Projects/  'html and css basics'/   temp/
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev (master)
+$ rm -rf temp
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev (master)
+$ ls
+ Commands/   Javascript/   Projects/  'html and css basics'/
+
+Atharv@DESKTOP-VTKC4HB MINGW64 ~/Desktop/Web dev (master)
+$
